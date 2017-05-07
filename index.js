@@ -14,6 +14,7 @@ var mdConverters = require('./lib/md-converters')
 var gfmConverters = require('./lib/gfm-converters')
 var HtmlParser = require('./lib/html-parser')
 var collapse = require('collapse-whitespace')
+var linkArray = []
 
 /*
  * Utilities
