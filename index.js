@@ -15,6 +15,7 @@ var gfmConverters = require('./lib/gfm-converters')
 var HtmlParser = require('./lib/html-parser')
 var collapse = require('collapse-whitespace')
 var linkArray = []
+var titleLock = false;
 
 /*
  * Utilities
