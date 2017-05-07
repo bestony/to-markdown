@@ -62,7 +62,7 @@ function bfsOrder (node) {
     elem = inqueue.shift()
     outqueue.push(elem)
     children = elem.childNodes
-    for (i = 0; i < children.length; i++) {
+    for (i = children.length - 1; i >= 0; i--) {
       if (children[i].nodeType === 1) inqueue.push(children[i])
     }
   }
